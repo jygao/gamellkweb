@@ -1,0 +1,40 @@
+#scene{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#animation{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.btn_start{
+    background: url(../image/btn_start0001.png);
+    cursor:pointer;
+    border: none;
+    width: 199px;
+    height: 81px;
+    position: absolute;
+    left:400px ;
+    top: 400px;
+}
+.btn_start:hover{
+    background: url(../image/btn_start0002.png);
+}
+
+.btn_close{
+    background: url(../image/btn_close0001.png);
+    cursor:pointer;
+    border: none;
+    width: 66px;
+    height: 69px;
+    position: absolute;
+    left:848px ;
+    top: 39px;
+}
+
+.btn_close:hover{
+    background: url(../image/btn_close0002.png);
+}

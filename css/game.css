@@ -1,0 +1,241 @@
+.btn_close_game{
+    background: url(../image/btn_close0001.png);
+    border: none;
+    width: 66px;
+    height: 69px;
+    position: absolute;
+    left:876px ;
+    top: 39px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn_close_game:hover{
+    background: url(../image/btn_close0002.png);
+    z-index: 3;
+}
+
+.btn_refresh{
+    background: url(../image/btn_refresh0001.png);
+    border: none;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left:865px ;
+    top: 204px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn_refresh:hover{
+    background: url(../image/btn_refresh0002.png);
+    z-index: 3;
+}
+
+.btn_tips{
+    background: url(../image/btn_tips0001.png);
+    border: none;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left:865px ;
+    top: 301px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn_tips:hover{
+    background: url(../image/btn_tips0002.png);
+    z-index: 3;
+}
+
+.btn_stop{
+    background: url(../image/btn_stop0001.png);
+    border: none;
+    width: 66px;
+    height: 69px;
+    position: absolute;
+    left:876px ;
+    top: 414px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.btn_stop:hover{
+    background: url(../image/btn_stop0002.png);
+    z-index: 3;
+}
+
+/*
+dialog css start
+*/
+
+.btnNextLevel{
+     background: url(../image/btn_next_level0001.png);
+     border: none;
+     position: absolute;
+     width: 124px;
+     height: 49px;
+     left: 343px;
+     top: 356px;
+     cursor: pointer;
+     z-index: 100;
+ }
+
+.btnNextLevel:hover{
+    background: url(../image/btn_next_level0002.png);
+    z-index: 100;
+}
+
+
+.btnEndGame{
+    background: url(../image/btn_quit0001.png);
+    border: none;
+    position: absolute;
+    width: 124px;
+    height: 49px;
+    left: 494px;
+    top: 356px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btnEndGame:hover{
+    background: url(../image/btn_quit0002.png);
+    z-index: 100;
+}
+
+.txt_level_of_next_level_dialog{
+    position: absolute;
+    left: 498px;
+    top: 240px;
+    font-size: 35px;
+    z-index: 100;
+}
+
+
+.btn_restart{
+    background: url(../image/btn_restart0001.png);
+    border: none;
+    position: absolute;
+    width: 124px;
+    height: 49px;
+    left: 343px;
+    top: 356px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn_restart:hover{
+    background: url(../image/btn_restart0002.png);
+    z-index: 100;
+}
+
+.txtTotalScore{
+    position: absolute;
+    left: 451px;
+    top: 207px;
+    font-size: 25px;
+    z-index: 100;
+}
+.txtTotalTime{
+    position: absolute;
+    left: 451px;
+    top: 251px;
+    font-size: 25px;
+    z-index: 100;
+}
+
+.txtGotGoldNum{
+    position: absolute;
+    left: 488px;
+    top: 291px;
+    font-size: 25px;
+    z-index: 100;
+}
+
+.txtExp{
+    position: absolute;
+    left: 361px;
+    top: 326px;
+    font-size: 18px;
+    z-index: 100;
+    color: #FF6600;
+}
+
+.btnEndGame_passall_dialog{
+    background: url(../image/btn_quit0001.png);
+    border: none;
+    position: absolute;
+    width:124px;
+    height: 49px;
+    left: 423px;
+    top: 353px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btnEndGame_passall_dialog:hover{
+    background: url(../image/btn_quit0002.png);
+    z-index: 100;
+}
+
+.btn_continue{
+    background: url(../image/btn_continue0001.png);
+    border: none;
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    left: 411px;
+    top: 226px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn_continue:hover{
+    background: url(../image/btn_continue0002.png);
+    z-index: 100;
+}
+
+
+
+.btn_cancel{
+    background: url(../image/btn_cancel0001.png);
+    border: none;
+    position: absolute;
+    width: 124px;
+    height: 49px;
+    left: 495px;
+    top: 352px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn_cancel:hover{
+    background: url(../image/btn_cancel0002.png);
+    z-index: 100;
+}
+
+
+
+.btn_confirm{
+    background: url(../image/btn_confirm0001.png);
+    border: none;
+    position: absolute;
+    width: 124px;
+    height: 50px;
+    left: 338px;
+    top: 352px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn_confirm:hover{
+    background: url(../image/btn_confirm0002.png);
+    z-index: 100;
+}
+
+
+
+
+
