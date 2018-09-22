@@ -1,4 +1,4 @@
-
+var bgAudio;
 function onStart() {
     var container = document.getElementById("container");
     document.body.removeChild(container);
@@ -19,9 +19,11 @@ function onStart() {
     canvas.style.zIndex = "2";
     document.body.appendChild(canvas);
 
-    var bgAudio = document.createElement("audio");
+    bgAudio = document.createElement("audio");
     bgAudio.src="sound/bg.mp3";
     bgAudio.autoplay ="autoplay";
+    bgAudio.loop = "loop";
+    bgAudio.volume = 0.05;
     document.body.appendChild(bgAudio);
 
     main();

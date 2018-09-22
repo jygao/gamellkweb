@@ -119,12 +119,10 @@ function main() {
 
     clickAudio = document.createElement("audio");
     clickAudio.src="sound/click.wav";
-    clickAudio.loop = false;
     document.body.appendChild(clickAudio);
 
     linkAudio = document.createElement("audio");
     linkAudio.src="sound/link.wav";
-    linkAudio.loop = false;
     document.body.appendChild(linkAudio);
 
 
@@ -285,6 +283,7 @@ function resetGame() {
     remainRefreshTime = gameObj.levelConfig.refresh;
     remainTipTime = gameObj.levelConfig.prompt;
     remainSec = gameObj.levelConfig.time;
+    bgAudio.play();
 
     resetAutoTip();
 
@@ -398,6 +397,7 @@ var Card ={
             return card.initY;
         }
         card.setSelected = function(){
+            clickAudio.load();
             clickAudio.play();
             card.divContainer.appendChild(card.chooseLightIamge);
             card.chooseLightIamge.style.position= "absolute";
@@ -450,7 +450,7 @@ var Card ={
                 }
             }
         }
-        
+
         card.changeTypeAndUpdateImage = function (newType) {
             // console.log(card.x+":"+card.y);
             if(card.image!=null){
@@ -538,6 +538,7 @@ function onClickCard(card) {
                 secondClickCard = null;
                 return;
             }
+            linkAudio.load();
             linkAudio.play();
             resetAutoTip();
             isMissing = true;
@@ -602,6 +603,7 @@ function addExtraTotalScore() {
 
 function checkIsFinished() {
     if(totalCanChooseCardNum<=0){
+        bgAudio.pause();
         stopGameTime();
         addExtraTotalScore();
         sendGateFinishMsg();
@@ -668,8 +670,10 @@ function onPopUpQuitConfirmDialog() {
     sendPlayOrStopMsg(false);
     isGameTimeCounting = false;
     autoTimeCounting = false;
+    bgAudio.pause();
     showQuitConfirmDialog({
         "onContinueGame":function () {
+            bgAudio.play();
             sendPlayOrStopMsg(true);
             isGameTimeCounting = true;
         },
@@ -681,10 +685,12 @@ function onPopUpStopDialog() {
     sendPlayOrStopMsg(false);
     isGameTimeCounting = false;
     autoTimeCounting = false;
+    bgAudio.pause();
     showStopDialog({
         "onContinueGame":function () {
             sendPlayOrStopMsg(true);
             isGameTimeCounting = true;
+            bgAudio.play();
         }
     })
 }

@@ -29,6 +29,8 @@ if(parent){
 function localCloseVBox() {
     if(parent&&parent.closeVBox){
         parent.closeVBox();
+    }else{
+        window.location.reload();
     }
 }
 
