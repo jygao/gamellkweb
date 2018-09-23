@@ -280,6 +280,8 @@ function resetGame() {
     isInitGame = false;
     hadStartedPlayReadyMovie=false;
     hadEndedPlayReadyMovie =false;
+    firstClickCard = null;
+    secondClickCard = null;
     remainRefreshTime = gameObj.levelConfig.refresh;
     remainTipTime = gameObj.levelConfig.prompt;
     remainSec = gameObj.levelConfig.time;
